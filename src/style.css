@@ -1,0 +1,51 @@
+
+.card {
+  height: 250px;
+  width: 350px;
+  position: relative;
+}
+.tilte {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke: 2px;
+  color: black;
+}
+.card-title {
+  margin: 10px;
+}
+
+.card-img {
+  height: 300px;
+  width: 350px;
+  border-radius: 3px;
+}
+
+.intro {
+  height: 70px;
+  width: 350px;
+  padding: 6px;
+  box-sizing: border-box;
+  position: absolute;
+  color: white;
+  transition: .5s ease-in-out;
+  bottom: 0px;
+  color: #48cae4;
+  background-color: #2a2b2e;
+}
+.card-content {
+  visibility: hidden;
+  margin: 20px;
+  opacity: 0;
+}
+.intro:hover{
+  height: 250px;
+  bottom: 0;
+  background: black;
+}
+.intro:hover .card-content {
+  opacity: 1;
+  visibility: visible;
+}
+.intro:hover {
+  cursor: pointer;
+}

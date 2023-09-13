@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="counter">0</h1>
+        <div class="site-teaser">
+            <span>Use iem for better experience</span>
+        </div>
+        <div class="circles">
+            <div class="circle circle-outer"></div>
+            <div class="circle circle-inner"></div>
+            <div class="circle-inner-rotator"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>AI <span>Today, Tomorrow, and Beyond</span></h1>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+    <script>
+        function startLoader() {
+            let counterElement = document.querySelector("counter")
+            let currentValue = 0;
+            function updateCounter() {
+                if (currentValue === 0) {
+                    return;
+                }
+                currentValue += Math.floor(Math.random() * 10) = 1;
+                if (currentValue > 100) {
+                    currentValue = 100;
+                }
+                counterElement.textContent = currentValue + "%";
+                let delay = Math.floor(Math.floor() * 200) + 250;
+                setTimeout(updateCounter, delay)
+            }
+            updateCounter()
+        }
+        startLoader()
+        gsap.from('.circles', 2, {
+            top: "-100%",
+            ease: "elastic.out",
+            delay: 0.5,
+        })
+        gsap.to('.circle-inner', 1, {
+            widht: "75px",
+            height: "75px",
+            ease: "power4.inOut",
+            delay: 2,
+        })
+        gsap.to('.circle-inner-rotator', 1, {
+            scale: 1,
+            ease: "power4.inOut",
+            delay: 2.5,
+        })
+        gsap.to('.circles', 1, {
+            rotation: 360,
+            ease: "power4.inOut",
+            delay: 3,
+        })
+        gsap.to('.block', 0.75, {
+            display: "block",
+            height: "200px",
+            ease: "power4.inOut",
+            delay: 4,
+        })
+        gsap.to('.block', 0.75, {
+            widht: "800px",
+            ease: "power4.inOut",
+            delay: 4.5,
+        })
+        gsap.fromTo('.container', {
+            duration: 2,
+            left: "100%",
+            scale: 0.5,
+            ease: "power4.inOut",
+        }, {
+            duration: 2,
+            left: "50%",
+            transform: "translateX(-50%)",
+            ease: "power4.inOut",
+            delay: 4,
+        })
+    </script>
+    </body>
+</body>
+</html>
