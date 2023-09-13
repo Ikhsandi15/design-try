@@ -9,6 +9,7 @@
     <link href="https://www.dafontfree.net/embed/bW9udHNlcnJhdC1ibGFjayZkYXRhLzE2L20vNzg2MzAvTW9udHNlcnJhdC1CbGFjay5vdGY" rel="stylesheet" type="text/css"/>
     <link href="/dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/ad2957a183.js" crossorigin="anonymous"></script>
     <style>
       body {
         font-family: 'montserrat-black', sans-serif;
@@ -17,13 +18,13 @@
   </head>
   <body class="scroll-smooth overflow-x-hidden">
     <!-- nav OpenAI logo -->
-    <div class="fixed top-3/4 left-5 bg-white p-1 rounded-md pt-2" style="z-index: 999;">
+    <div class="fixed top-3/4 left-5 bg-white p-1 rounded-md pt-2 bg-opacity-5" style="z-index: 999;">
         <img src="img/openai.svg" alt="" class="w-9 m-auto">
         <img src="img/midjourney.png" alt="" class="w-12 m-auto">
     </div>
     <!-- navbar transparant + glass effect -->
     <nav
-      class="navbar rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 flex fixed flex-wrap align-center justify-between py-6 px-6 w-full" style="z-index: 99"
+      class="navbar rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 flex absolute flex-wrap align-center justify-between py-6 px-6 w-full" style="z-index: 99"
     >
       <div class="logo flex items-center">
         <a href="#" class="">
@@ -77,13 +78,14 @@
           <img src="img/diagonal-grid-trans5.png" alt="" class="absolute top-28">
           <img src="img/hero.jpg" alt="" class="">
         </div>
+        <div class="w-screen absolute bg-gray-400 h-861px" style="opacity: 0.3;"></div>
         <div class="absolute top-72 left-72 text-center">
           <h2 class="text-7xl font-bold">AI Today </h2>
           <h2 class="text-7xl font-bold">Tomorrow</h2>
           <h2 class="text-7xl font-bold tilte">And Beyond</h2>
           <img src="img/symbols.webp" alt="" class="absolute w-11/12 right-0">
         </div>
-        <div class="flex justify-center items-center absolute -bottom-52 left-32 space-"> 
+        <div class="flex justify-center items-center absolute -bottom-32 left-32 space-"> 
           <div class="card overflow-hidden">
               <!-- <img src="../src/img/logo.jpg" alt="" class="card-img rounded-sm"> -->
               <div class="intro">
@@ -104,11 +106,10 @@
               </div>
           </div>
         </div>
-        <div class="w-screen h-full absolute bg-gray-500" style="opacity: 0.5;"></div>
       </div>
       <!-- end hero -->
       <!-- apa itu AI -->
-      <div class="bg-black overflow-hidden relative px-5 h-3/4 bg-bg-shape1">
+      <div class="bg-black overflow-hidden relative px-5 h-3/4 bg-bg-shape1 ">
         <div class="relative top-3 pt-5">
           <div class="mx-auto w-780px mt-40 relative" style="z-index: 10;">
             <img src="img/imgTanya2.jpg" alt="" class="w-780px" />
@@ -123,6 +124,9 @@
             <p>AI (Kecerdasan Buatan) adalah teknologi yang mengajarkan komputer untuk berpikir dan belajar seperti manusia.</p> <br>
             <p> Ini memungkinkan komputer untuk mengenali pola, membuat prediksi, dan menyelesaikan masalah tanpa perlu campur tangan manusia.</p> <br>
             <p>Dengan kata lain, AI membuat komputer menjadi pintar dalam berbagai aspek.</p>
+          </div>
+          <div class="absolute" style="width: 100px; left: 658px; bottom: 190px">
+            <button class="bg-white text-black rounded-md" style="padding: 12px 15px">Details<i class="fa-solid fa-arrow-right" style="color: #000000; padding-left: 7px;"></i></button>
           </div>
         </div>
       </div>

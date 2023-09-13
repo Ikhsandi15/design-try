@@ -6,10 +6,15 @@ module.exports = {
       width: {
         "780px": "48.75rem",
         "1083px": "1083px",
-        "36%": "36%"
+        "36%": "36%",
+        "80px": "80px"
       },
       "spacing": {
         "350px": "350px"
+      },
+      height: {
+        '861px': '861px',
+        '900px': '890px'
       },
       backgroundImage: {
         'diagonal-grid': "url('../src/img/diagonal-grid-trans5.png')",
