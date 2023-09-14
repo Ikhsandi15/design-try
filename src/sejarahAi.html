@@ -13,9 +13,105 @@
         body {
           font-family: 'montserrat-black', sans-serif;
         }
+        .circle {
+        height: 24px;
+        width: 24px;
+        border-radius: 24px;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        z-index: 99999999;
+      }
       </style>
 </head>
-<body>
+<body class="overflow-x-hidden">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+    <script>
+        const coords = { x: 0, y: 0 };
+    const circles = document.querySelectorAll(".circle");
+
+    const colors = [
+    "#ffb56b",
+    "#fdaf69",
+    "#f89d63",
+    "#f59761",
+    "#ef865e",
+    "#ec805d",
+    "#e36e5c",
+    "#df685c",
+    "#d5585c",
+    "#d1525c",
+    "#c5415d",
+    "#c03b5d",
+    "#b22c5e",
+    "#ac265e",
+    "#9c155f",
+    "#950f5f",
+    "#830060",
+    "#7c0060",
+    "#680060",
+    "#60005f",
+    "#48005f",
+    "#3d005e",
+    ];
+
+    circles.forEach(function (circle, index) {
+    circle.x = 0;
+    circle.y = 0;
+    circle.style.backgroundColor = colors[index % colors.length];
+    });
+
+    window.addEventListener("mousemove", function (e) {
+    coords.x = e.clientX;
+    coords.y = e.clientY;
+    });
+
+    function animateCircles() {
+    let x = coords.x;
+    let y = coords.y;
+
+    circles.forEach(function (circle, index) {
+    circle.style.left = x - 12 + "px";
+    circle.style.top = y - 12 + "px";
+
+    circle.style.scale = (circles.length - index) / circles.length;
+
+    circle.x = x;
+    circle.y = y;
+
+    const nextCircle = circles[index + 1] || circles[0];
+    x += (nextCircle.x - x) * 0.3;
+    y += (nextCircle.y - y) * 0.3;
+    });
+
+    requestAnimationFrame(animateCircles);
+    }
+
+    animateCircles();
+
+    </script>
     <nav
       class="navbar rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 flex absolute flex-wrap align-center justify-between py-6 px-6 w-full" style="z-index: 99"
     >
@@ -64,24 +160,24 @@
     </nav>
 
     <!-- main content -->
-    <div>
-        <!-- hero -->
-      <div class="overflow-x-hidden bg-no-repeat w-screen flex flex-col">
+    <div class="relative">
+      <!-- hero -->
+      <div class="overflow-x-hidden bg-no-repeat w-screen flex flex-col overflow-y-hidden h-800px relative">
         <div class="flex static">
-          <img src="img/bg-left.jpg" alt="" class="w-36%">
+          <img src="img/bg-leftSejarahAi.jpg" alt="" class="w-32%">
           <img src="img/diagonal-grid-trans5.png" alt="" class="absolute top-28">
           <img src="img/right-bg-_1_.jpg" alt="" class="">
         </div>
-        <div class="w-screen absolute bg-gray-400 h-900px" style="opacity: 0.3;"></div>
-        <div class="absolute top-72 left-72 text-center">
-          <h2 class="text-7xl font-bold">AI Today </h2>
-          <h2 class="text-7xl font-bold">Tomorrow</h2>
-          <h2 class="text-7xl font-bold tilte">And Beyond</h2>
-          <img src="img/symbols.webp" alt="" class="absolute w-11/12 right-0">
+        <!-- <div class="w-screen absolute bg-gray-400 h-990px" style="opacity: 0.3;"></div> -->
+        <div class="absolute top-52 left-72 text-center">
+          <h2 class="text-7xl font-bold w-1/2 text-left mb-3 text-white">AI Mengubah Masa Depan </h2>
+          <div class="relative left-56">
+            <p class="text-white text-xl font-semibold text-left ">Semua lini akan terpengaruh dengan adanya AI ini.</p>
+          </div>
         </div>
-        <div class="flex justify-center items-center absolute -bottom-52 left-32 space-"> 
+        <!-- <div class="flex justify-center items-center absolute bottom-0 left-32"> 
           <div class="card overflow-hidden">
-              <!-- <img src="../src/img/logo.jpg" alt="" class="card-img rounded-sm"> -->
+              <img src="../src/img/logo.jpg" alt="" class="card-img rounded-sm">
               <div class="intro">
                 <h1 class="card-title font-bold text-xl">Chat GPT</h1>
                 <p class="card-content">(AI) yang dapat menghasilkan teks berdasarkan input pengguna. Chat GPT menggunakan teknologi pemrosesan bahasa alami (NLP) untuk memahami maksud pengguna dan memberikan jawaban yang relevan dan kreatif.</p>
@@ -99,9 +195,105 @@
                   <p class="card-content">ChaGPT popular chat bot ai that can do anything</p>
               </div>
           </div>
-        </div>
+        </div> -->
       </div>
       <!-- end hero -->
+
+      <!-- main section -->
+      <div class="h-screen static">
+        <!-- section 2 -->
+        <div class="relative">
+          <div class="relative">
+            <img src="img/bg-wave1.jpg" alt="" class="absolute w-screen">
+            <img src="img/circle-grid (1).webp" alt="" class="absolute w-2/4">
+            <h1 class="text-6xl text-white font-bold relative top-10 left-5">Bagaimana AI Bekerja ? </h1>
+            <h3 class="text-5xl text-white font-semibold relative top-32 left-7">Pengenalan Konsep Dasar AI</h3>
+            <div class="relative top-52">
+            <!-- hover with effect animation  -->
+            <!-- hover effect animation 1 -->
+            <div class="group absolute top-0 left-10">
+              <button
+              class="rounded px-4 py-2 text-white font-bold text-center border-none text-4xl"
+              >
+              Teori Pikiran (Theory of Mind)
+            </button>
+            <div
+            class="text-2xl text-white absolute left-0 top-10 mb-2 transition-all duration-500 ease-in-out opacity-0 -translate-y-1/4 transform rounded p-4 group-hover:opacity-100 group-hover:-translate-y-0"
+            >
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nostrum libero magni impedit maxime, ullam id ut explicabo
+                  tenetur vel modi, praesentium vitae fugit quisquam provident
+                  maiores accusantium quam odio quae!
+                </p>
+              </div>
+            </div>
+            <!-- end hover animation 1 -->
+            <!-- hover effect animation 2 -->
+            <div class="group absolute top-0 right-10">
+              <button
+              class="rounded px-4 py-2 text-white font-bold text-center border-none text-4xl"
+              >
+              Teori Pikiran (Theory of Mind)
+            </button>
+            <div
+            class="text-2xl text-white absolute left-0 top-10 mb-2 transition-all duration-500 ease-in-out opacity-0 -translate-y-1/4 transform rounded p-4 group-hover:opacity-100 group-hover:-translate-y-0"
+            >
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nostrum libero magni impedit maxime, ullam id ut explicabo
+                  tenetur vel modi, praesentium vitae fugit quisquam provident
+                  maiores accusantium quam odio quae!
+                </p>
+              </div>
+            </div>
+            <!-- end hover animation 2 -->
+            <!-- hover effect animation 3 -->
+            <div class="group absolute top-56 right-10">
+              <button
+              class="rounded px-4 py-2 text-white font-bold text-center border-none text-4xl"
+              >
+              Teori Pikiran (Theory of Mind)
+            </button>
+            <div
+            class="text-2xl text-white absolute left-0 top-10 mb-2 transition-all duration-500 ease-in-out opacity-0 -translate-y-1/4 transform rounded p-4 group-hover:opacity-100 group-hover:-translate-y-0"
+            >
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nostrum libero magni impedit maxime, ullam id ut explicabo
+                  tenetur vel modi, praesentium vitae fugit quisquam provident
+                  maiores accusantium quam odio quae!
+                </p>
+              </div>
+            </div>
+            <!-- end hover animation 3 -->
+            <!-- hover effect animation 4 -->
+            <div class="group absolute top-56 left-10">
+              <button
+              class="rounded px-4 py-2 text-white font-bold text-center border-none text-4xl"
+              >
+              Teori Pikiran (Theory of Mind)
+            </button>
+            <div
+            class="text-2xl text-white absolute left-0 top-10 mb-2 transition-all duration-500 ease-in-out opacity-0 -translate-y-1/4 transform rounded p-4 group-hover:opacity-100 group-hover:-translate-y-0"
+            >
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nostrum libero magni impedit maxime, ullam id ut explicabo
+                  tenetur vel modi, praesentium vitae fugit quisquam provident
+                  maiores accusantium quam odio quae!
+                </p>
+              </div>
+            </div>
+            <!-- end hover animation 4 -->
+            <!-- end hover with effect animation  -->
+            </div>
+          </div>
+        </div>
+        <!-- end section 2 -->
+        <!-- section 3 -->
+        <!-- end section 3 -->
+      </div>
     </div>
 </body>
 </html>
