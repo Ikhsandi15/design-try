@@ -1,0 +1,45 @@
+body {
+    margin:0px;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:"Open Sans",sans-serif;
+    background:#222;
+  }
+  .box {
+    width:200px;
+    height:200px;
+    border:10px solid #ccc;
+    border-radius:10px;
+    line-height:200px;
+    text-align:center;
+    color:#ddd;
+    font-size:25px;
+    font-weight:600;
+    text-transform:uppercase;
+    position:relative;
+    overflow:hidden;
+  }
+  .box:before {
+    content:"";
+    position:absolute;
+    width:400px;
+    height:400px;
+    background:#00acee;
+    left:50%;
+    transform:translateX(-50%);
+    border-radius:40%;
+    animation:fill 4s ease-in-out infinite;
+    z-index:-1;
+  }
+  @keyframes fill {
+    from {
+      top:250px;
+      transform:translateX(-50%) rotate(0deg);
+    }
+    to {
+      top:-50px;
+      transform:translateX(-50%) rotate(360deg);
+    }
+  }

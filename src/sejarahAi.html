@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/ad2957a183.js" crossorigin="anonymous"></script>
     <style>
-        body {
-          font-family: 'montserrat-black', sans-serif;
-        }
+        @font-face{font-family:"montserrat-medium";src:url("https://www.dafontfree.net/data/709/m/181549/Montserrat-Medium.ttf") format("woff"),url("https://www.dafontfree.net/data/709/m/181549/Montserrat-Medium.ttf") format("opentype"),url("https://www.dafontfree.net/data/709/m/181549/Montserrat-Medium.ttf") format("truetype");}
         .circle {
         height: 24px;
         width: 24px;
@@ -25,8 +23,21 @@
         z-index: 99999999;
       }
       </style>
+    <link rel="stylesheet" href="dropdown/style.css">
 </head>
 <body class="overflow-x-hidden">
+    <div class="scrolldown">
+        <a href="#footer">
+          <div>
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+          </div>
+        </a>
+        <!-- buttonnnnnn -->
+        <a class="text" href="#footer"><span class="">Scroll down</span></a>
+    </div>
+
     <div class="circle"></div>
     <div class="circle"></div>
     <div class="circle"></div>
@@ -124,14 +135,23 @@
             class="relative"
           />
         </a>
-        <a href="" class="font-semibold text-center text-xl">Jantur</a>
+        <a href="" class="font-semibold text-center text-xl text-white">Jantur</a>
       </div>
-      <div class="nav-list font-semibold">
+      <div class="nav-list font-semibold text-white">
         <ul class="flex gap-3 space-x-4">
           <li>
             <a
               href="/ai.html"
-              class="border-b-2 border-b-black pb-2"
+              class="hover:border-b-2 pb-2 hover:border-b-white transition-all"
+              onclick="getPage()"
+              id="ai"
+              >Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="/ai.html"
+              class="border-b-2 border-b-white pb-2"
               onclick="getPage()"
               id="ai"
               >Artificial Intelligence
@@ -140,19 +160,10 @@
           <li>
             <a
               href="/ai.html"
-              class="border-b-2 border-b-black pb-2"
+              class="hover:border-b-2 pb-2 hover:border-b-white transition-all"
               onclick="getPage()"
               id="ai"
-              >Artificial Intelligence
-            </a>
-          </li>
-          <li>
-            <a
-              href="/ai.html"
-              class="border-b-2 border-b-black pb-2"
-              onclick="getPage()"
-              id="ai"
-              >Artificial Intelligence
+              >About Us
             </a>
           </li>
         </ul>
@@ -200,100 +211,121 @@
       <!-- end hero -->
 
       <!-- main section -->
-      <div class="h-screen static">
+      <div class="block"style="font-size: 0; line-height: 0;">
         <!-- section 2 -->
         <div class="relative">
-          <div class="relative">
-            <img src="img/bg-wave1.jpg" alt="" class="absolute w-screen">
+          <div class="static bg-bg-wave1 h-1500px bg-contain">
             <img src="img/circle-grid (1).webp" alt="" class="absolute w-2/4">
             <h1 class="text-6xl text-white font-bold relative top-10 left-5">Bagaimana AI Bekerja ? </h1>
             <h3 class="text-5xl text-white font-semibold relative top-32 left-7">Pengenalan Konsep Dasar AI</h3>
-            <div class="relative top-52">
             <!-- hover with effect animation  -->
-            <!-- hover effect animation 1 -->
-            <div class="group absolute top-0 left-10">
-              <button
-              class="rounded px-4 py-2 text-white font-bold text-center border-none text-4xl"
-              >
-              Teori Pikiran (Theory of Mind)
-            </button>
-            <div
-            class="text-2xl text-white absolute left-0 top-10 mb-2 transition-all duration-500 ease-in-out opacity-0 -translate-y-1/4 transform rounded p-4 group-hover:opacity-100 group-hover:-translate-y-0"
-            >
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum libero magni impedit maxime, ullam id ut explicabo
-                  tenetur vel modi, praesentium vitae fugit quisquam provident
-                  maiores accusantium quam odio quae!
-                </p>
+            <div class="relative top-52">
+              <!-- hover effect animation 1 -->
+              <div class="group absolute top-0 left-10">
+                <button
+                class="rounded px-4 py-2 text-white font-bold text-center border-none text-4xl"
+                >
+                Teori Pikiran (Theory of Mind)
+              </button>
+                <div
+                class="text-2xl text-white absolute left-0 top-10 mb-2 transition-all duration-500 ease-in-out opacity-0 -translate-y-1/4 transform rounded p-4 group-hover:opacity-100 group-hover:-translate-y-0"
+                >
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nostrum libero magni impedit maxime, ullam id ut explicabo
+                    tenetur vel modi, praesentium vitae fugit quisquam provident
+                    maiores accusantium quam odio quae!
+                  </p>
+                </div>
               </div>
-            </div>
-            <!-- end hover animation 1 -->
-            <!-- hover effect animation 2 -->
-            <div class="group absolute top-0 right-10">
-              <button
-              class="rounded px-4 py-2 text-white font-bold text-center border-none text-4xl"
-              >
-              Teori Pikiran (Theory of Mind)
-            </button>
-            <div
-            class="text-2xl text-white absolute left-0 top-10 mb-2 transition-all duration-500 ease-in-out opacity-0 -translate-y-1/4 transform rounded p-4 group-hover:opacity-100 group-hover:-translate-y-0"
-            >
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum libero magni impedit maxime, ullam id ut explicabo
-                  tenetur vel modi, praesentium vitae fugit quisquam provident
-                  maiores accusantium quam odio quae!
-                </p>
+              <!-- end hover animation 1 -->
+              <!-- hover effect animation 2 -->
+              <div class="group absolute top-0 right-10">
+                <button
+                class="rounded px-4 py-2 text-white font-bold text-center border-none text-4xl"
+                >
+                Teori Pikiran (Theory of Mind)
+                </button>
+                <div
+                class="text-2xl text-white absolute left-0 top-10 mb-2 transition-all duration-500 ease-in-out opacity-0 -translate-y-1/4 transform rounded p-4 group-hover:opacity-100 group-hover:-translate-y-0"
+                >
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nostrum libero magni impedit maxime, ullam id ut explicabo
+                    tenetur vel modi, praesentium vitae fugit quisquam provident
+                    maiores accusantium quam odio quae!
+                  </p>
+                </div>
               </div>
-            </div>
-            <!-- end hover animation 2 -->
-            <!-- hover effect animation 3 -->
-            <div class="group absolute top-56 right-10">
-              <button
-              class="rounded px-4 py-2 text-white font-bold text-center border-none text-4xl"
-              >
-              Teori Pikiran (Theory of Mind)
-            </button>
-            <div
-            class="text-2xl text-white absolute left-0 top-10 mb-2 transition-all duration-500 ease-in-out opacity-0 -translate-y-1/4 transform rounded p-4 group-hover:opacity-100 group-hover:-translate-y-0"
-            >
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum libero magni impedit maxime, ullam id ut explicabo
-                  tenetur vel modi, praesentium vitae fugit quisquam provident
-                  maiores accusantium quam odio quae!
-                </p>
+              <!-- end hover animation 2 -->
+              <!-- hover effect animation 3 -->
+              <div class="group absolute top-56 right-10">
+                <button
+                class="rounded px-4 py-2 text-white font-bold text-center border-none text-4xl"
+                >
+                Teori Pikiran (Theory of Mind)
+              </button>
+                <div
+                class="text-2xl text-white absolute left-0 top-10 mb-2 transition-all duration-500 ease-in-out opacity-0 -translate-y-1/4 transform rounded p-4 group-hover:opacity-100 group-hover:-translate-y-0"
+                >
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nostrum libero magni impedit maxime, ullam id ut explicabo
+                    tenetur vel modi, praesentium vitae fugit quisquam provident
+                    maiores accusantium quam odio quae!
+                  </p>
+                </div>
               </div>
-            </div>
-            <!-- end hover animation 3 -->
-            <!-- hover effect animation 4 -->
-            <div class="group absolute top-56 left-10">
-              <button
-              class="rounded px-4 py-2 text-white font-bold text-center border-none text-4xl"
-              >
-              Teori Pikiran (Theory of Mind)
-            </button>
-            <div
-            class="text-2xl text-white absolute left-0 top-10 mb-2 transition-all duration-500 ease-in-out opacity-0 -translate-y-1/4 transform rounded p-4 group-hover:opacity-100 group-hover:-translate-y-0"
-            >
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum libero magni impedit maxime, ullam id ut explicabo
-                  tenetur vel modi, praesentium vitae fugit quisquam provident
-                  maiores accusantium quam odio quae!
-                </p>
+              <!-- end hover animation 3 -->
+              <!-- hover effect animation 4 -->
+              <div class="group absolute top-56 left-10">
+                <button
+                class="rounded px-4 py-2 text-white font-bold text-center border-none text-4xl"
+                >
+                Teori Pikiran (Theory of Mind)
+                </button>
+                <div
+                class="text-2xl text-white absolute left-0 top-10 mb-2 transition-all duration-500 ease-in-out opacity-0 -translate-y-1/4 transform rounded p-4 group-hover:opacity-100 group-hover:-translate-y-0"
+                >
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nostrum libero magni impedit maxime, ullam id ut explicabo
+                    tenetur vel modi, praesentium vitae fugit quisquam provident
+                    maiores accusantium quam odio quae!
+                  </p>
+                </div>
               </div>
+              <!-- end hover animation 4 -->
+              <!-- hover effect animation 5 -->
+              <div class="group absolute top-96 left-10">
+                <button
+                class="rounded px-4 py-2 text-white font-bold text-center border-none text-4xl"
+                >
+                Teori Pikiran (Theory of Mind)
+                </button>
+                <div
+                class="text-2xl text-white absolute left-0 top-10 mb-2 transition-all duration-500 ease-in-out opacity-0 -translate-y-1/4 transform rounded p-4 group-hover:opacity-100 group-hover:-translate-y-0"
+                >
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nostrum libero magni impedit maxime, ullam id ut explicabo
+                    tenetur vel modi, praesentium vitae fugit quisquam provident
+                    maiores accusantium quam odio quae!
+                  </p>
+                </div>
+              </div>
+              <!-- end hover animation 5 -->
+             
             </div>
-            <!-- end hover animation 4 -->
             <!-- end hover with effect animation  -->
-            </div>
           </div>
         </div>
         <!-- end section 2 -->
         <!-- section 3 -->
         <!-- end section 3 -->
       </div>
+
+      <div id="footer"></div>
     </div>
 </body>
 </html>

@@ -8,6 +8,7 @@ module.exports = {
         "1083px": "1083px",
         "36%": "36%",
         "32%": "32%",
+        "100%": "100%",
         "80px": "80px"
       },
       "spacing": {
@@ -17,7 +18,8 @@ module.exports = {
         '861px': '861px',
         '900px': '900px',
         '990px': '990px',
-        '800px': '800px'
+        '800px': '800px',
+        '1500px': '1500px'
       },
       backgroundImage: {
         'diagonal-grid': "url('../src/img/diagonal-grid-trans5.png')",
