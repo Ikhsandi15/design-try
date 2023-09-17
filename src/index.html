@@ -25,6 +25,12 @@
         pointer-events: none;
         z-index: 99999999;
       }
+      .nav-list ul li .scroll-header {
+        color: white;
+      }
+      .logo .scroll-title {
+        color: white;
+      }
     </style>
     <link rel="stylesheet" href="dropdown/style.css">
   </head>
@@ -80,14 +86,14 @@
             class="relative"
           />
         </a>
-        <a href="" class="font-semibold text-center text-xl">Jantur</a>
+        <a href="" class="font-semibold text-center text-xl logo-name">Jantur</a>
       </div>
       <div class="nav-list font-semibold my-auto">
         <ul class="flex gap-3 space-x-4">
           <li>
             <a
               href="/ai.html"
-              class="border-b-2 border-b-black pb-2"
+              class="border-b-2 border-b-black pb-2 a"
               onclick="getPage()"
               id="ai"
               >Home
@@ -95,8 +101,8 @@
           </li>
           <li>
             <a
-              href="/ai.html"
-              class="hover:border-b-2 pb-2 hover:border-b-black transition-all"
+              href="magicOfAi/index.html"
+              class="hover:border-b-2 pb-2 hover:border-b-black transition-all a"
               onclick="getPage()"
               id="ai"
               >Artificial Intelligence
@@ -105,7 +111,7 @@
           <li>
             <a
               href="/ai.html"
-              class="hover:border-b-2 pb-2 hover:border-b-black transition-all"
+              class="hover:border-b-2 pb-2 hover:border-b-black transition-all a"
               onclick="getPage()"
               id="ai"
               >About Us
@@ -350,5 +356,22 @@ requestAnimationFrame(animateCircles);
 animateCircles();
 
   </script>
+  <script>
+    window.addEventListener('scroll', () => {
+    const navText = document.querySelectorAll('.a');
+    const title = document.querySelector('.logo-name');
+    console.log(navText);
+    navText.forEach(myFunction);
+    function myFunction(item) {
+        if (window.scrollY > 700) { // Ubah warna latar belakang saat scroll melebihi 100px
+            item.classList.add('scroll-header');
+            title.classList.add('scroll-title');    
+        } else { 
+            item.classList.remove('scroll-header');
+            title.classList.remove('scroll-title');
+        }
+    }
+    });
+</script>
   </body>
   </html>
