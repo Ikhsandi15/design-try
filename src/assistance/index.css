@@ -1,0 +1,305 @@
+.divwave-bg-icon {
+  position: absolute;
+  margin: 0 !important;
+  width: 100%;
+  right: 0;
+  bottom: 84.52px;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  height: 424.38px;
+  object-fit: cover;
+  opacity: 0.3;
+  z-index: 0;
+}
+.divwave-bg-icon.dotdot {
+  width: 100%;
+  height: 100%;
+  top: 5px;
+}
+.heading-2 {
+  width: 520.56px;
+}
+.group-34174png-icon {
+  position: absolute;
+  height: calc(100% - 4px);
+  width: calc(100% - 10px);
+  top: 4.02px;
+  right: 0.17px;
+  bottom: -0.02px;
+  left: 9.83px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.group-34175png {
+  position: absolute;
+  height: calc(100% - 197.2px);
+  width: calc(100% + 13.23px);
+  top: -19.7px;
+  right: 21.22px;
+  bottom: 216.9px;
+  left: -34.45px;
+  overflow: hidden;
+  background-image: url(./public/group34175png@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.chat-gpt-from {
+  margin: 0;
+}
+.chat-gpt-from-container {
+  position: relative;
+  line-height: 23.4px;
+  display: inline-block;
+  max-width: 193.8000030517578px;
+}
+.heading-3 {
+  width: 193.8px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 63.80000305175781px 0 0;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.chat-gpt-layaknya {
+  position: relative;
+  line-height: 19.6px;
+  display: inline-block;
+  max-width: 193.8000030517578px;
+}
+.ph2d-5df0eda5 {
+  width: 193.8px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 25.800003051757812px 0 0;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: var(--font-size-sm);
+  font-family: var(--font-lato);
+}
+.divcard,
+.divdesc {
+  position: absolute;
+  left: 0;
+}
+.divdesc {
+  width: 100%;
+  top: 284.73px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0 37.479984283447266px 53.68000030517578px 37.4900016784668px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 14.79px;
+}
+.divcard {
+  bottom: 0;
+  background-color: var(--color-whitesmoke);
+  width: 268.77px;
+  height: 479.2px;
+}
+.heading-31 {
+  width: 193.8px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 11.800003051757812px 0 0;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.ai-dari-microsoft {
+  position: relative;
+  font-size: var(--font-size-sm);
+  line-height: 19.6px;
+  font-family: var(--font-lato);
+  display: flex;
+  align-items: center;
+  width: 194px;
+}
+.ph2d-58d90a3e {
+  width: 193.8px;
+}
+.divdesc1,
+.th-1-1 {
+  position: absolute;
+  left: 0;
+}
+.divdesc1 {
+  width: calc(100% - 0.23px);
+  top: 274px;
+  right: 0.23px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 37.489986419677734px 54.089996337890625px 37.47999954223633px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 14.78px;
+}
+.th-1-1 {
+  top: 0;
+  width: 285px;
+  height: 289px;
+  object-fit: cover;
+}
+.image-1806png {
+  position: absolute;
+  height: calc(100% - 182.42px);
+  /* width: calc(100% + 81px); */
+  width: 285px;
+  top: -36.98px;
+  right: -61.83px;
+  bottom: 219.4px;
+  left: -19.17px;
+  overflow: hidden;
+  background-image: url(./public/image1806png@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.divcard1 {
+  position: absolute;
+  bottom: 34.92px;
+  left: 340.72px;
+  background-color: var(--color-whitesmoke);
+  width: 269px;
+  height: 471px;
+}
+.bard-1-icon,
+.image-1806png-icon {
+  position: absolute;
+  object-fit: cover;
+}
+.image-1806png-icon {
+  height: calc(100% - 194.42px);
+  width: calc(100% - 0.01px);
+  top: -20.01px;
+  right: 13.45px;
+  bottom: 214.43px;
+  left: -13.44px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.bard-1-icon {
+  top: 0;
+  left: 0;
+  width: 345px;
+  height: 289px;
+}
+.image-1806png1 {
+  position: absolute;
+  height: calc(100% - 194.42px);
+  width: calc(100% - 0.01px);
+  top: -20.01px;
+  right: 13.45px;
+  bottom: 214.43px;
+  left: -13.44px;
+  overflow: hidden;
+  background-image: url(./public/image1806png1@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.heading-32 {
+  width: 193.8px;
+  padding: 0 66.80000305175781px 0.1699981689453125px 0;
+}
+.divdesc2,
+.heading-32,
+.ph2d-f1019b2 {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.ph2d-f1019b2 {
+  width: 193.8px;
+  padding: 0 4.8000030517578125px 0 0;
+  font-size: var(--font-size-sm);
+  font-family: var(--font-lato);
+}
+.divdesc2 {
+  position: absolute;
+  width: calc(100% - 0.01px);
+  top: 284.73px;
+  right: 0.01px;
+  left: 0;
+  padding: 0 37.48000717163086px 54.100006103515625px 37.47999954223633px;
+  gap: 14px;
+}
+.divcard2 {
+  position: absolute;
+  bottom: 154.89px;
+  left: 681.82px;
+  background-color: var(--color-whitesmoke);
+  width: 268.77px;
+  height: 483px;
+}
+.ai-for-virtual {
+  position: absolute;
+  top: -235.92px;
+  left: -125.28px;
+  font-size: 60.8px;
+  line-height: 66.91px;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  width: 520.56px;
+  height: 205px;
+}
+.divswiper-wrapper {
+  position: relative;
+  width: 950.59px;
+  height: 483px;
+}
+.assistance,
+.divcontent-block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.divcontent-block {
+  width: 950.59px;
+  height: 704.45px;
+  flex-direction: column;
+  gap: 105.9px;
+  z-index: 1;
+}
+.assistance {
+  position: relative;
+  background-color: #0d0c11;
+  width: 100%;
+  flex-direction: row;
+  padding: 0 149.9599609375px 0 257.45001220703125px;
+  box-sizing: border-box;
+  min-height: 948.47802734375px;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+}
+
+.card {
+  transition: 0.5s;
+}
+.card:hover {
+  transform: scale(1.02,1.02);
+  margin-bottom: 50px;
+}
+.card:hover .group-34175png,
+.card:hover .image-1806png1,
+.card:hover .image-1806png 
+{
+  border: 5px solid transparent; /* Atur border yang biasa */
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.7); /* Atur efek glow */
+  transition: box-shadow 0.3s ease; /* Animasi transisi */
+}

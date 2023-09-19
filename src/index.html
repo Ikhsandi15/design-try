@@ -10,21 +10,10 @@
     <link href="/dist/output.css" rel="stylesheet" />
     <!-- font -->
     <link href="https://www.dafontfree.net/embed/bW9udHNlcnJhdC1tZWRpdW0mZGF0YS83MDkvbS8xODE1NDkvTW9udHNlcnJhdC1NZWRpdW0udHRm" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/ad2957a183.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
     <style>
       @font-face{font-family:"montserrat-medium";src:url("https://www.dafontfree.net/data/709/m/181549/Montserrat-Medium.ttf") format("woff"),url("https://www.dafontfree.net/data/709/m/181549/Montserrat-Medium.ttf") format("opentype"),url("https://www.dafontfree.net/data/709/m/181549/Montserrat-Medium.ttf") format("truetype");}
-      .circle {
-        height: 35px;
-        width: 35px;
-        border-radius: 24px;
-        background-color: black;
-        position: fixed;
-        top: 0;
-        left: 0;
-        pointer-events: none;
-        z-index: 99999999;
-      }
       .nav-list ul li .scroll-header {
         color: white;
       }
@@ -46,27 +35,6 @@
           <a class="text" href="#pageBawah"><span class="">Scroll down</span></a>
         </a>
     </div>
-
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>            
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
 
     <!-- nav OpenAI logo -->
     <div class="fixed top-3/4 left-5 bg-white p-1 rounded-md pt-2 bg-opacity-5" style="z-index: 999;">
@@ -92,9 +60,9 @@
         <ul class="flex gap-3 space-x-4">
           <li>
             <a
-              href="/ai.html"
+              href="/src/index.html"
               class="border-b-2 border-b-black pb-2 a"
-              onclick="getPage()"
+              onclick=""
               id="ai"
               >Home
             </a>
@@ -103,7 +71,7 @@
             <a
               href="magicOfAi/index.html"
               class="hover:border-b-2 pb-2 hover:border-b-black transition-all a"
-              onclick="getPage()"
+              onclick=""
               id="ai"
               >Artificial Intelligence
             </a>
@@ -112,7 +80,7 @@
             <a
               href="/ai.html"
               class="hover:border-b-2 pb-2 hover:border-b-black transition-all a"
-              onclick="getPage()"
+              onclick=""
               id="ai"
               >About Us
             </a>
@@ -130,11 +98,8 @@
           <img src="img/hero.jpg" alt="" class="">
         </div>
         <div class="w-screen absolute bg-gray-400 h-861px" style="opacity: 0.3;"></div>
-        <div class="absolute top-72 left-72 text-center">
-          <h2 class="text-7xl font-bold">AI Today </h2>
-          <h2 class="text-7xl font-bold">Tomorrow</h2>
-          <h2 class="text-7xl font-bold tilte">And Beyond</h2>
-          <img src="img/symbols.webp" alt="" class="absolute w-11/12 right-0">
+        <div class="absolute top-32 left-64">
+          <iframe src="comment/text.html" frameborder="0" class="w-screen h-990px" style="scrollbar-width: none; scrollbar-color: transparent transparent;"></iframe>
         </div>
         <div class="flex justify-center items-center absolute -bottom-52 left-32 space-"> 
           <div class="card overflow-hidden">
@@ -168,16 +133,17 @@
                 Apa itu AI?
             </h1>
           </div>
-          <div class="w-96 relative bottom-64 left-10">
+          <div class="w-96 relative bottom-64 left-10" style="z-index:99;">
             <img src="img/subTanya5.jpg" alt="" class="w-72" />
           </div> 
           <div class="w-96 text-white relative bottom-72 left-1/2">
             <p>AI (Kecerdasan Buatan) adalah teknologi yang mengajarkan komputer untuk berpikir dan belajar seperti manusia.</p> <br>
             <p> Ini memungkinkan komputer untuk mengenali pola, membuat prediksi, dan menyelesaikan masalah tanpa perlu campur tangan manusia.</p> <br>
             <p>Dengan kata lain, AI membuat komputer menjadi pintar dalam berbagai aspek.</p>
-          </div>
-          <div class="absolute" style="width: 100px; left: 658px; bottom: 190px">
-            <button class="bg-white text-black rounded-md" style="padding: 12px 15px">Details<i class="fa-solid fa-arrow-right" style="color: #000000; padding-left: 7px;"></i></button>
+            <!-- button -->
+            <div class="mt-5 mr-5">
+              <iframe src="button-toRight/index.html" frameborder="0"></iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -190,18 +156,21 @@
         <div class="bg-black w-full grid content-center place-content-center bg-bg-shape2">
           <div class="relative">
             <div>
-              <img src="img/ganti3d.png" alt="" class="w-780px"/>
+              <img src="img/ganti3d.png" alt="" class="w-780px sm:w-350px"/>
             </div>
+          
             <!-- hover with effect animation  -->
             <!-- hover animation 1 -->
-            <div class="group absolute bottom-10">
-              <button
+            <div class="sm:hidden">
+
+              <div class="group absolute bottom-10">
+                <button
                 class="rounded px-4 py-2 text-white font-bold text-center border-none"
-              >
+                >
                 Kesadaran Diri (Self Aware)
               </button>
               <div
-                class="text-white absolute left-0 bottom-full mb-2 transition-all duration-500 ease-in-out opacity-0 translate-y-1/4 transform rounded p-4 group-hover:opacity-100 group-hover:translate-y-0"
+              class="text-white absolute left-0 bottom-full mb-2 transition-all duration-500 ease-in-out opacity-0 sm:opacity-100 translate-y-1/4 transform rounded p-4 group-hover:opacity-100 group-hover:translate-y-0"
               >
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -271,7 +240,7 @@
             <div class="group absolute top-350px right-40">
               <button class="rounded px-4 py-2 text-white font-bold text-center border-none">
               Artificial Narrow Intelligence (ANI)
-              </button>
+            </button>
               <div class="text-white absolute left-0 bottom-10 mb-2 transition-all duration-500 ease-in-out opacity-0 translate-y-1/4 transform rounded p-4 group-hover:opacity-100 group-hover:-translate-y-0">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -279,25 +248,26 @@
                     tenetur vel modi, praesentium vitae fugit quisquam provident
                     maiores accusantium quam odio quae!
                   </p>
+                </div>
               </div>
             </div>
-            <!-- end hover animation 5 -->
-            <!-- end hover -->
-          </div>
+              <!-- end hover animation 5 -->
+              <!-- end hover -->
+            </div>
         </div>
       </div>
       <!-- end nav-button -->
-
+      
       <!-- footer -->
       <div id="footer"></div>
     </div>
     <script src="index.js"></script>
     <script>
       const coords = { x: 0, y: 0 };
-const circles = document.querySelectorAll(".circle");
+      const circles = document.querySelectorAll(".circle");
 
-const colors = [
-"#0066ff",
+      const colors = [
+        "#0066ff",
 "#3399ff",
 "#f89d63",
 "#f59761",

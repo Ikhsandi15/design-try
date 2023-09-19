@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .slide {
+  width: 50vh;
+  height: 50vh;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 200vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display:none;
+}
+.one {
+  background: #efdefe;
+}
+.two {
+  background: #a3f3d3;
+}
+.three {
+  background: #0bbaa0;
+}
+.four {
+  background: #00dfdf;
+}
+    </style>
+</head>
+<body>
+    <div class="outer-wrapper">
+        <div class="wrapper">
+          <div class="slide one">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nostrum libero magni impedit maxime, ullam id ut explicabo
+                tenetur vel modi, praesentium vitae fugit quisquam provident
+                maiores accusantium quam odio quae!
+              </p>
+          </div>
+          <div class="slide two">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nostrum libero magni impedit maxime, ullam id ut explicabo
+                tenetur vel modi, praesentium vitae fugit quisquam provident
+                maiores accusantium quam odio quae!
+              </p>
+          </div>
+          <div class="slide three">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nostrum libero magni impedit maxime, ullam id ut explicabo
+                tenetur vel modi, praesentium vitae fugit quisquam provident
+                maiores accusantium quam odio quae!
+              </p>
+          </div>
+          <div class="slide four">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nostrum libero magni impedit maxime, ullam id ut explicabo
+                tenetur vel modi, praesentium vitae fugit quisquam provident
+                maiores accusantium quam odio quae!
+              </p>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

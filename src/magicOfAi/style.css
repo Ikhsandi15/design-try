@@ -1,5 +1,5 @@
 
-  :active, :hover, :focus {
+  :active, :hover, :focus { 
     outline: 0!important;
     outline-offset: 0;
   }
@@ -96,11 +96,11 @@
   background: #555;
 }
 
-@font-face{font-family:"montserrat-medium", 'sans-serif';src:url("https://www.dafontfree.net/data/709/m/181549/Montserrat-Medium.ttf") format("woff"),url("https://www.dafontfree.net/data/709/m/181549/Montserrat-Medium.ttf") format("opentype"),url("https://www.dafontfree.net/data/709/m/181549/Montserrat-Medium.ttf") format("truetype");}
         body {
             padding: 0;
             margin: 0;
             position: static;
+            background-color: #f1edf0;
         }
 
         .container {
@@ -411,8 +411,8 @@
         /* section 4 */
         .section-4 {
             text-align: center;
-            padding: 5px 20px;
-            margin-top: 50px;
+            margin-top: -5px;
+            height: 1000px;
         }
         .section4 {
             width: 340px;
@@ -437,30 +437,6 @@
         }
         .section4.no-1 img {
             width: 200px;
-        }
-
-        /* section-5 */
-        .section-5 {
-            margin-top: 100px;
-            text-align: center;
-            position: relative;
-        }
-
-        .section5.right-content {
-            border-radius: 5px;
-            text-align: right;
-            flex-direction: column;
-            padding: 5px 25px 5px 200px;
-            margin-bottom: 25px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-        }
-        .section5.left-content {
-            border-radius: 5px;
-            text-align: left;
-            flex-direction: column;
-            padding: 5px 200px 5px 25px;
-            margin-bottom: 25px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
         }
 
         /* section 6 */
@@ -493,13 +469,26 @@
             padding: 20px;
             margin-top: 60px;
             height: 800px;
+            display: flex;
+            justify-content: space-between;
         }
         .section-7 h3 {
             margin-top: -20px;
         }
+        .titleSection7 {
+            margin: 120px auto;
+            width: 10%;
+        }
+        .titleSection7 h1 {
+            margin-bottom: 50px;
+        }
+        .container-card-section7 {
+            display: flex;
+            flex-direction: column;
+            width: 70%; 
+        }
         .section7.card {
             padding: 20px;
-            border: 2px solid black;
         }
         .section7.card .title-card-section7 {
             display: flex;
@@ -530,7 +519,7 @@
         /* nav */
         .glass-navbar {
             background: rgba(255, 255, 255, 0.2); /* Warna latar belakang dengan transparansi */
-            backdrop-filter: blur(10px); /* Efek blur latar belakang */
+            backdrop-filter: blur(5px); /* Efek blur latar belakang */
             /* border-radius: 10px; */
             padding: 20px;
             margin: 0 auto;
