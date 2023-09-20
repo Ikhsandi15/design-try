@@ -1,0 +1,214 @@
+.home {
+  position: absolute;
+  top: -1.5px;
+  left: 0;
+  line-height: 21.96px;
+}
+.link {
+  position: relative;
+  box-sizing: border-box;
+  width: 59.51px;
+  height: 27.7px;
+}
+.linkmargin {
+  display: flex;
+  flex-direction: column;
+  padding: 0 42.437496185302734px 0 42.4375px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.history-of-ai {
+  position: relative;
+  line-height: 21.96px;
+}
+.link1,
+.link2,
+.link3,
+.linkmargin1,
+.linkmargin2,
+.linkmargin3 {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.4000015258789062px 5.743750095367432px 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.link2,
+.link3,
+.linkmargin1,
+.linkmargin2,
+.linkmargin3 {
+  padding: 0 42.43749237060547px 1.4562511444091797px 42.4375px;
+  justify-content: center;
+}
+.link2,
+.link3,
+.linkmargin2,
+.linkmargin3 {
+  padding: 0 0 5.743750095367432px;
+  justify-content: flex-start;
+}
+.link3,
+.linkmargin2,
+.linkmargin3 {
+  padding: 0 42.6875px 1.4562511444091797px 42.4375px;
+  justify-content: center;
+}
+.link3,
+.linkmargin3 {
+  padding: 0 0.6100006103515625px 5.743750095367432px 0;
+  justify-content: flex-start;
+}
+.linkmargin3 {
+  padding: 0 42.4375px 1.4562511444091797px;
+  justify-content: center;
+}
+.link4,
+.nav {
+  display: flex;
+  justify-content: flex-start;
+}
+.link4 {
+  flex-direction: column;
+  padding: 0 1.339996337890625px 5.743750095367432px 0;
+  align-items: flex-start;
+}
+.nav {
+  flex-direction: row;
+  align-items: flex-end;
+  z-index: 0;
+  margin-top: 80px;
+}
+.svg-icon {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.divblock-logo,
+.divfooter-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.divfooter-logo {
+  width: 83.73px;
+  align-items: flex-start;
+  padding-left: 55px;
+}
+.divblock-logo {
+  align-self: stretch;
+  flex: 1;
+  border-top: 1.5px solid rgba(13, 12, 17, 0.1);
+  /* padding: 56.02000045776367px 481.69000244140625px 54.51000213623047px
+    63.65999984741211px; */
+    /* padding-left: 5px; */
+    align-items: center;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+}
+.link-privacy {
+  position: relative;
+  line-height: 23.77px;
+  display: inline-block;
+  max-height: 23.770000457763672px;
+}
+.divblock-submenu,
+.nav1 {
+  display: flex;
+  flex-direction: row;
+}
+.nav1 {
+  padding: 0 30.350006103515625px 0 31.829999923706055px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 68.61px;
+}
+.divblock-submenu {
+  align-self: stretch;
+  border: 1px solid rgba(13, 12, 17, 0.1);
+  box-sizing: border-box;
+  width: 780.84px;
+  /* padding: 62.38999938964844px 212.04002380371094px 62.36000442504883px
+    212.00999450683594px; */
+  align-items: center;
+  justify-content: center;
+}
+.musketeer {
+  color: #1b1a21;
+}
+.ph2d-cb8767b2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.divblock-copyright,
+.divfooter-bottom {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+}
+.divblock-copyright {
+  flex: 1;
+  border-top: 1.5px solid rgba(13, 12, 17, 0.1);
+  padding: 63.13999938964844px 52.860015869140625px 61.61000442504883px
+    88.22000122070312px;
+  align-items: center;
+  justify-content: flex-end;
+  color: rgba(27, 26, 33, 0.2);
+  /* height: 100px; */
+}
+.divfooter-bottom {
+  height: 148.52px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 1;
+  font-size: 17px;
+  font-family: Lato;
+}
+/* .divnoise-bg-icon {
+  position: absolute;
+  margin: 0 !important;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  opacity: 0.06;
+  z-index: 2;
+} */
+.gud {
+  position: absolute;
+  background-color: #eee9ed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 100.02000427246094px 0 0 0;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 381.93798828125px;
+  text-align: left;
+  font-size: 19.1px;
+  color: #1b1a21;
+  font-family: Montserrat;
+  bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.history-of-ai:hover {
+  text-decoration: underline;
+  /* padding-top: 3px; */
+}

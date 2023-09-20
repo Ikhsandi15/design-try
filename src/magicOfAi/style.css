@@ -468,7 +468,7 @@
         .section-7 {
             padding: 20px;
             margin-top: 60px;
-            height: 800px;
+            height: auto;
             display: flex;
             justify-content: space-between;
         }
@@ -593,4 +593,8 @@
         }
         .glass-navbar .logo .scroll-title {
             color: black;
+        }
+
+        .logo-name {
+            margin-left: 10px;
         }

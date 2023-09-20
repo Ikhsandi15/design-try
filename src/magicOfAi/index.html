@@ -19,7 +19,7 @@
 <body>
     <nav class="glass-navbar">
         <div class="logo">
-            <img src="../img/android-chrome-192x192.png" alt="">
+            <img src="../img/logoFixHitam.jpg" alt="" id="logoNav">
             <h1 class="logo-name">Jantur</h1>
         </div>
         <ul>
@@ -28,7 +28,7 @@
             <li class="about"><a href="#" class="a">About Us</a></li>
         </ul>
     </nav>
-    <div class="container">
+    <div class="container" style="overflow: hidden;">
         <!-- hero -->
         <div class="contain">
             <div class="heroImage">
@@ -214,20 +214,29 @@
                 </div>
             </div>
         </div>
+
+        <!-- footer -->
+        <div id="footer" style="height: 250px; width: 100vw;">
+            <object data="../footer/index.html" type="" style="height: 100%; width: 100vw;"></object>
+        </div>
+
     </div>
 
     <script>
         window.addEventListener('scroll', () => {
         const navText = document.querySelectorAll('.a');
         const title = document.querySelector('.logo-name');
+        const logo = document.getElementById('logoNav');
         navText.forEach(myFunction);
         function myFunction(item) {
-            if (window.scrollY > 1700) { // Ubah warna latar belakang saat scroll melebihi 100px
+            if (window.scrollY > 2700) { // Ubah warna latar belakang saat scroll melebihi 100px
                 item.classList.add('scroll-header');
                 title.classList.add('scroll-title');    
+                logo.src = '../img/logoFixPutih.jpg';
             } else { 
                 item.classList.remove('scroll-header');
                 title.classList.remove('scroll-title');
+                logo.src = '../img/logoFixHitam.jpg';
             }
         }
         });

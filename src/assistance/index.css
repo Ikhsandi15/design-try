@@ -260,6 +260,7 @@
   position: relative;
   width: 950.59px;
   height: 483px;
+  /* display: flex; */
 }
 .assistance,
 .divcontent-block {
@@ -302,4 +303,13 @@
   border: 5px solid transparent; /* Atur border yang biasa */
   box-shadow: 0 0 10px rgba(0, 0, 255, 0.7); /* Atur efek glow */
   transition: box-shadow 0.3s ease; /* Animasi transisi */
+}
+@media (max-width: 575.98px) { 
+  .divswiper-wrapper {
+    height: 800px;
+  }
+  .divcard1 {
+    bottom: 0;
+    background-color: black;
+  }
 }

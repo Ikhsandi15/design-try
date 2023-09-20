@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/blanka');
+
 .a {
   position: absolute;
   top: 0;
@@ -18,7 +20,7 @@
   left: 170px;
   display: flex;
   align-items: center;
-  width: 738px;
+  /* width: 738px; */
 }
 .ommorow,
 .spanword3,
@@ -29,8 +31,9 @@
 .spanword3 {
   left: 16px;
   width: 650.86px;
-  height: 93.92px;
-  overflow: hidden;
+  /* height: 93.92px; */
+  /* height: 93.92px; */
+  /* overflow: hidden; */
 }
 .ommorow {
   left: 70px;
@@ -38,15 +41,15 @@
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  width: 717px;
+  /* width: 717px; */
 }
 .spanword4 {
   position: absolute;
   top: 101.14px;
   left: 110.95px;
-  width: 907px;
-  height: 94px;
-  overflow: hidden;
+  /* width: 907px; */
+  /* height: 94px; */
+  /* overflow: hidden; */
 }
 .a1,
 .d,
@@ -73,30 +76,40 @@
   text-align: right;
 }
 .spanword5 {
-  width: calc(100% + 143px);
+  /* width: calc(100% + 143px); */
+  /* width: 714px; */
   top: 208px;
   right: -105px;
   left: -38px;
-  height: 94px;
-  overflow: hidden;
+  /* left:15px; */
+  /* height: 94px; */
+  /* overflow: hidden; */
 }
 .beyond {
   top: 315px;
   left: 37px;
+  /* left: 100px; */
   line-height: 93.93px;
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  width: 714px;
+  /* width: 714px; */
   -webkit-text-stroke: 2.1px #000;
   color: transparent;
 }
 .text {
   position: relative;
-  width: 100%;
+  width: 80%;
   height: 462px;
   text-align: left;
   font-size: var(--font-size-94xl-2);
   color: var(--color-white);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-blanka);
+  left: 200px;
+}
+
+@media (max-width: 639px) {
+  .text {
+    background-color: black;
+  }
 }
